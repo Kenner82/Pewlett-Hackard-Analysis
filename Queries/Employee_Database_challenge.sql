@@ -38,3 +38,18 @@ INTO unique_titles
 FROM retirement_titles
 WHERE (to_date = '9999-01-01')
 ORDER BY emp_no, to_date DESC;
+
+
+-- Write another query in the Employee_Database_challenge.sql file to retrieve 
+-- the number of employees by their most recent job title who are about to retire.
+
+-- First, retrieve the number of titles from the Unique Titles table.
+-- Then, create a Retiring Titles table to hold the required information.
+-- Group the table by title, then sort the count column in descending order.
+
+SELECT COUNT(title),
+	title
+-- INTO retiring_titles
+FROM unique_titles
+GROUP BY title
+ORDER BY count DESC;
