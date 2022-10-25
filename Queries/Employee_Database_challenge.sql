@@ -53,3 +53,37 @@ SELECT COUNT(title),
 FROM unique_titles
 GROUP BY title
 ORDER BY count DESC;
+
+
+
+-- In the Employee_Database_challenge.sql file, write a query to create a Mentorship Eligibility table that holds 
+-- the employees who are eligible to participate in a mentorship program.
+
+-- Retrieve the emp_no, first_name, last_name, and birth_date columns from the Employees table.
+-- Retrieve the from_date and to_date columns from the Department Employee table.
+-- Retrieve the title column from the Titles table.
+-- Use a DISTINCT ON statement to retrieve the first occurrence of the employee number for each set of rows defined by the ON () clause.
+-- Create a new table using the INTO clause.
+-- Join the Employees and the Department Employee tables on the primary key.
+-- Join the Employees and the Titles tables on the primary key.
+-- Filter the data on the to_date column to all the current employees, then filter the data on the birth_date columns to get all 
+-- the employees whose birth dates are between January 1, 1965 and December 31, 1965.
+-- Order the table by the employee number.
+
+
+SELECT DISTINCT ON (emp.emp_no) emp.emp_no,
+	emp.first_name,
+	emp.last_name,
+	emp.birth_date,
+	de.from_date,
+	de.to_date,
+	ti.title
+INTO mentorship_eligibility
+FROM employees AS emp
+INNER JOIN dept_employees as de
+ON (emp.emp_no = de.emp_no)
+INNER JOIN titles as ti
+ON (emp.emp_no = ti.emp_no)
+WHERE (de.to_date = '9999-01-01') 
+	AND (emp.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
+ORDER BY emp.emp_no;
