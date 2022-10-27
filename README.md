@@ -7,7 +7,7 @@ Anticipating that a number of Pewlett-Hackard employees will soon be reaching re
 ## Results
 
 * A total of 72,458 employees are expected to retire.
-* 70% of the exiting employees are in positions of high-level leadership (roughly 35% of the Senior Engineers and 35% of the Senior Staff).
+* 70% of those exiting employees are in positions of high-level leadership (roughly 35% of the Senior Engineers and 35% of the Senior Staff).
 * 16,921 of the employees who would be eligile for promotion to those positions are also set to retire.
 
 <img alt="retiring_titles" src="https://user-images.githubusercontent.com/111674383/198361887-0035b38f-0aef-435b-a466-29bc4cde77f6.png">
