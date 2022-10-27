@@ -1,12 +1,7 @@
-# Pewlett-Hackard-Analysis
-
+# Pewlett-Hackard Analysis
 
 ## Project Overview
-Explain the purpose of this analysis.
-
-
-
-
+Anticipating that a number of Pewlett-Hackard employees will soon be reaching retirement age, this analysis breaks down current employees born between 1952-1955 by current job title in order to view how many positions at different levels will be left vacant and need to be filled. In order to address these voids, eligibility for a mentorship program (for employees born in 1965 to help train new hirees before retiring completely) was compiled. 
 
 ## Results
 Provide a bulleted list with four major points from the two analysis deliverables. Use images as support where needed.
